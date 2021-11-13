@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(21, 28, 43, 0.39);
+    position: fixed;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    margin-left: 2rem;
+    color: #b1f710;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-20px, -50%);
+    transition: opacity 250ms ease;
+    font-weight: 600;
+}
+
+.navlinks ul { 
+    
+    list-style: none; 
+    display: table;
+    text-align: center;
+  }
+
+ .navlinks li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+
+  .navlinks a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .navlinks a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .navlinks a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/donatehands.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0c0c04;
+}
+
+.first h1{
+    color:white;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-shadow:  0px 0px 6px black;
+    margin: 10px 0;
+}
+
+.first h3{
+    color: rgb(207, 200, 200);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.btn #donate{
+    background-color:black ;
+    border: none;
+    font-weight: bold;
+    color: rgb(235, 235, 13);
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: black;
+    font-weight: bold;
+    color: rgb(140, 189, 121);
+    text-align: center;
+    text-decoration: none;
+    transition: 300ms ease;
+    margin-right: 40px;
+    margin-top: 70px;
+    font-size: 12px;
+    font-weight: 100;
+    box-shadow: 0px 0px 2px #91928f;
+}
+
+.btn button:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(252, 162, 17, 0.5);
+    transition: 300ms ease;
+}
+
+#donate:focus {
+    outline: none;
+}
+
